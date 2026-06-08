@@ -1,0 +1,9 @@
+export { Header } from './Header';
+export { HeroSection } from './HeroSection';
+export { ServicesSection } from './ServicesSection';
+export { HowToBookSection } from './HowToBookSection';
+export { AboutSection } from './AboutSection';
+export { PatientInfoSection } from './PatientInfoSection';
+export { ContactSection } from './ContactSection';
+export { Footer } from './Footer';
+export { MobileCTA } from './MobileCTA';
