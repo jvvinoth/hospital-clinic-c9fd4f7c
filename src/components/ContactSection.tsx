@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Phone, Clock, MapPin } from 'lucide-react';
+import { MessageCircle, Phone, Clock, MapPin, Mail } from 'lucide-react';
 import { siteContent } from '../lib/siteContent';
 
 export const ContactSection: React.FC = () => {
@@ -46,6 +46,22 @@ export const ContactSection: React.FC = () => {
                 {contact.phone.number}
               </a>
               <p className="text-white/70 mt-1">{contact.phone.subtext}</p>
+            </div>
+
+            {/* Email */}
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <Mail className="text-accent" size={20} />
+                <span className="text-sm uppercase tracking-wide text-accent font-medium">
+                  {contact.email.label}
+                </span>
+              </div>
+              <a
+                href={`mailto:${contact.email.address}`}
+                className="text-2xl md:text-3xl font-semibold hover:text-accent transition-colors break-all"
+              >
+                {contact.email.address}
+              </a>
             </div>
 
             {/* Location */}

@@ -133,6 +133,10 @@ export const siteContent = {
   
   contact: {
     heading: "Get in touch",
+    email: {
+      label: "Email us",
+      address: "chennaihospitals@gmail.com",
+    },
     whatsapp: {
       text: "Message us on WhatsApp",
       link: "https://wa.me/1234567890?text=Hello%2C%20I%27d%20like%20to%20book%20an%20appointment.%20%0A%0AName%3A%20%0APreferred%20date%2Ftime%3A%20%0AReason%20for%20visit%3A%20",
