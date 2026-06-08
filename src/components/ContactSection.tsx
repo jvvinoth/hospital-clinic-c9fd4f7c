@@ -79,12 +79,19 @@ export const ContactSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 aspect-video flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="text-accent mx-auto mb-3" size={48} />
-                <p className="text-white/70">Interactive map</p>
-              </div>
+            {/* Google Maps Embed */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden border border-white/20">
+              <iframe
+                src="https://www.google.com/maps?q=12.932014459999994,80.04743956999997&hl=en&z=15&output=embed"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Hospital Clinic Location"
+                className="w-full h-[400px]"
+              ></iframe>
             </div>
           </div>
         </div>
